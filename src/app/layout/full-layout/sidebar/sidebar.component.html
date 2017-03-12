@@ -1,0 +1,35 @@
+<div class="ui breadcrumb" [class.state_1]="mainSidebar.show">
+  <div class="section">
+    <i class="home icon"></i>
+  </div>
+  <div class="section">
+    {{mainSidebar.menu[mainSidebar.selectedIndex].title}}
+    </div>
+  <div class="section"
+        *ngIf="mainSidebar.menu[mainSidebar.selectedIndex].menu[mainSidebar.menu[mainSidebar.selectedIndex].selectedIndex] != undefined"
+  >{{mainSidebar.menu[mainSidebar.selectedIndex].menu[mainSidebar.menu[mainSidebar.selectedIndex].selectedIndex].title}}
+  </div>
+</div>
+
+<div class="siderbar">
+  <ul class="sidebar-main" [class.siderbar-mini]="!mainSidebar.show">
+    <!-- Show/Hide sidebar -->
+    <li (click)="sidebarToggle()">
+      <i class="content icon"></i>
+    </li>
+    <!-- For all menu -->
+    <li *ngFor="let menu of mainSidebar.menu; let i = index"
+        [class.active]="mainSidebar.selectedIndex == i"
+        (click)="sidebarItemClicked(0, i)">
+      <i class="{{menu.icon}} icon"></i>
+      <span class="caret" *ngIf="(mainSidebar.selectedIndex == i) && (mainSidebar.showSub) && (mainSidebar.menu[mainSidebar.selectedIndex].menu.length > 0)"></span>
+    </li>
+  </ul>
+  <ul class="sidebar-submain" [class.hide]="(mainSidebar.menu[mainSidebar.selectedIndex].menu.length == 0) || (!mainSidebar.showSub) || (!mainSidebar.show)">
+    <li *ngFor="let menu of mainSidebar.menu[mainSidebar.selectedIndex].menu; let i = index"
+       [class.active]="mainSidebar.menu[mainSidebar.selectedIndex].selectedIndex == i"
+       (click)="sidebarItemClicked(1, i)">
+      <span>{{menu.title}}</span>
+    </li>
+  </ul>
+</div>

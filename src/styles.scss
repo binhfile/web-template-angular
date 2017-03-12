@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/scss/define';
+// *{
+//     border: red 1px solid;
+// }
+
+
+// Load font
+@import url('assets/fonts/source_sans_pro.css');
+
+body{
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+}

@@ -1,0 +1,17 @@
+<div class="header">
+  <div class="group left">
+    <div class="item">
+      <i class="content icon"></i>
+    </div>
+  </div>
+  <div class="group right">
+    <div *ngFor="let item of rightItem.items;"
+        class="item">
+        <i class="{{item.icon}} icon" *ngIf="item.icon != undefined"></i>
+        <span class="caption" *ngIf="item.caption != undefined">{{item.caption}}</span>
+    </div>
+  </div>
+  <div class="group center">
+    <div class="title">{{title}}</div>
+  </div>
+</div>

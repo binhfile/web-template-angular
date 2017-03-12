@@ -1,0 +1,66 @@
+@import "../../assets/scss/define.scss";
+
+$header-height: 50px;
+$header-background: #3c8dbc;
+$item-width: 44px;
+$item-icon-size: 2.0rem;
+$item-text-size: 1.5rem;
+
+.header{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  background-color: $header-background;
+  .group{
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .item{
+      // border: 1px solid red;
+      height: 100%;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      transition-timing-function: ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .icon{
+        font-size: $item-icon-size;
+        color: $text-color;
+        margin: 0;
+        width: $item-width;
+      }
+      .caption{
+        font-size: $item-text-size;
+        color: $text-color;
+        margin-left: 2px;
+        margin-right: 8px;
+      }
+    }
+  }
+  .right{
+    right: 0;
+    margin-right: 5px;
+  }
+  .left{
+    left: 0;
+  }
+  .center{
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: $text-color;
+  }
+}

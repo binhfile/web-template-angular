@@ -1,0 +1,48 @@
+@font-face{
+    font-family: 'Source Sans Pro Black';
+    src: url('Source_Sans_Pro/SourceSansPro-Black.ttf')
+}
+@font-face{
+    font-family: 'Source Sans Pro BlackItalic';
+    src: url('Source_Sans_Pro/SourceSansPro-BlackItalic.ttf')
+}
+@font-face{
+    font-family: 'Source Sans Pro';
+    src: url('Source_Sans_Pro/SourceSansPro-Regular.ttf')
+}
+@font-face{
+    font-family: 'Source Sans Pro Bold';
+    src: url('Source_Sans_Pro/SourceSansPro-Bold.ttf')
+}
+@font-face{
+    font-family: 'Source Sans Pro BoldItalic';
+    src: url('Source_Sans_Pro/SourceSansPro-BoldItalic.ttf')
+}
+@font-face{
+    font-family: 'Source Sans Pro Light';
+    src: url('Source_Sans_Pro/SourceSansPro-Light.ttf')
+}
+@font-face{
+    font-family: 'Source Sans Pro ExtraLight';
+    src: url('Source_Sans_Pro/SourceSansPro-ExtraLight.ttf')
+}
+@font-face{
+    font-family: 'Source Sans Pro ExtraLightItalic';
+    src: url('Source_Sans_Pro/SourceSansPro-ExtraLightItalic.ttf')
+}
+@font-face{
+    font-family: 'Source Sans Pro Italic';
+    src: url('Source_Sans_Pro/SourceSansPro-Italic.ttf')
+}
+@font-face{
+    font-family: 'Source Sans Pro SemiBold';
+    src: url('Source_Sans_Pro/SourceSansPro-Semibold.ttf')
+}
+@font-face{
+    font-family: 'Source Sans Pro SemiBoldItalic';
+    src: url('Source_Sans_Pro/SourceSansPro-SemiboldItalic.ttf')
+}
+@font-face{
+    font-family: 'Source Sans Pro BoldItalic';
+    src: url('Source_Sans_Pro/SourceSansPro-BoldItalic.ttf')
+}

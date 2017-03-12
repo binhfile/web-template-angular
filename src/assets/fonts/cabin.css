@@ -1,0 +1,28 @@
+@font-face{
+    font-family: 'Cabin';
+    src: url('Cabin/Cabin-Regular.ttf')
+}
+@font-face{
+    font-family: 'Cabin Bold';
+    src: url('Cabin/Cabin-Bold.ttf')
+}
+@font-face{
+    font-family: 'Cabin Italic';
+    src: url('Cabin/Cabin-Italic.ttf')
+}
+@font-face{
+    font-family: 'Cabin Medium';
+    src: url('Cabin/Cabin-Medium.ttf')
+}
+@font-face{
+    font-family: 'Cabin SemiBold';
+    src: url('Cabin/Cabin-SemiBold.ttf')
+}
+@font-face{
+    font-family: 'Cabin BoldItalic';
+    src: url('Cabin/Cabin-BoldItalic.ttf')
+}
+@font-face{
+    font-family: 'Cabin MediumItalic';
+    src: url('Cabin/Cabin-MediumItalic.ttf')
+}
